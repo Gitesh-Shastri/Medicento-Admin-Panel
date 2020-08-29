@@ -1,0 +1,25 @@
+<% include ./partials/header.ejs %>
+<link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+    
+    <div class="login_card">
+        <img src="assets/img/login_user.png" alt="user" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <div class="input_container">
+                <input type="text" name="name" id="name" placeholder="User Name" class="input_control" autocomplete="off">
+                <label for="name">User Name</label>
+            </div>
+            <div class="input_container">
+                    <input type="password" name="password" id="password" placeholder="Password" class="input_control">
+                    <label for="name">Password</label>
+            </div>
+            <a href="/signUp" class="signUp">Create An Account. Sign Up?</a>
+            <input type="submit" class="login_btn" value="Login" />
+        </form>
+    </div>
+
+</body>
+</html>

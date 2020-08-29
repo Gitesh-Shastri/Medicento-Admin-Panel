@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.login_card {
+    width: 400px;
+    margin: 10% auto;
+    position: relative;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    padding: 70px 0% ;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px; 
+    left: calc(50% - 50px);
+}
+h1 {
+    text-align: center;
+    padding: 0 0 20px;
+    margin: 0;
+    font-size: 22px;
+}
+.input_container {
+    position: relative;
+    margin: 25px 0px;
+}
+.input_control {
+    margin:0px 10%;
+    width: 80%;
+    padding: 10px 10px;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+.input_container label {
+    position: absolute;
+    top: 10px;
+    left: 12%;
+    display: none;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    transition: all .2s ease-out;
+}
+.input_control:focus {
+    outline: none;
+    border: 3px solid #6dd5ed;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+.input_control:not(:placeholder-shown) {
+    border: 3px solid #6dd5ed;
+}
+.input_control:focus,:not(:placeholder-shown) + label {
+    top: -12px;
+    background: #fff;
+    padding:0px 5px; 
+    display: block;
+}
+.login_btn {
+    background: #FF416C;
+    width: 80%;
+    color: white;
+    padding: 5px;
+    margin-left: 10%;
+    border-radius: 20px; 
+}
+.signUp{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+}
+.login_btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
+}
